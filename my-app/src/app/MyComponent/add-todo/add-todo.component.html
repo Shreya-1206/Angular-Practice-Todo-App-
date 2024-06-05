@@ -2,12 +2,12 @@
 <form (ngSubmit) = onSubmit()>
     <div class="mb-3">
       <label for="title" class="form-label">Add Todo Title</label>
-      <input type="text" class="form-control" id="title" [(ngModel)] = "title" aria-describedby="emailHelp">
+      <input name = "title" type="text" class="form-control" id="title" [(ngModel)] = "title" aria-describedby="emailHelp">
       <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
     </div>
     <div class="mb-3">
       <label for="desc" class="form-label">Todo Description</label>
-      <input type="text" class="form-control" id="desc" [(ngModel)] = "desc" >
+      <input name = "desc" type="text" class="form-control" id="desc" [(ngModel)] = "desc" >
     </div>
     <button type="submit" class="btn btn-warning">Add Todo</button>
   </form>
